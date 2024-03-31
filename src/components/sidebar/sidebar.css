@@ -1,0 +1,141 @@
+.sidebarContainer{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  background-color: var(--blue-bg-primary);
+  color: white;
+  transition: all 0.1s;
+  font-family: "Poppins";
+  font-weight: 500;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 7px ; 
+    background-color: var(--blue-bg-primary) ;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--blue-bg-primary) ;
+    border-radius: 4px ; 
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #888; 
+  }
+}
+.sidebarContainer.collapsedSidebar{
+  width: 100px;
+}
+@media screen and (max-width:984px) {
+  .sidebarContainer{
+    width: 100px;
+  }
+  .companyName{
+    display: none !important;
+  }
+  .logoContainer{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .logoImg{
+    width: 60px !important;
+    height: 60px !important;
+
+  }
+  .menuImg{
+    border: 1px solid var(--gray3);
+    padding: 3px;
+    border-radius: 2px;
+  }
+  .menuTitle{
+    display: none;
+  }
+  .menuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+}
+.logoContainer{
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoContainer.collapsedSidebar{
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logoImg{
+  width: 80px;
+  height: 80px;
+}
+.logoImg.collapsedSidebar{
+   width: 60px;
+  height: 60px;
+}
+.companyName{
+  display: flex;
+  flex-direction: column;
+  line-height: 17px;
+  margin-left: -10px;
+}
+.companyName.collapsedSidebar{
+  display: none;
+}
+.companyName span:nth-child(1){
+  font-weight: 600;
+  font-size: 18px;
+}
+.menuImg.open{
+  border: 1px solid var(--gray3);
+  padding: 3px;
+  border-radius: 2px;
+}
+.profileContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.profileContainer img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.profileContainer span{
+  flex-wrap: wrap;
+}
+.menuContainer{
+  padding:5px;
+} 
+.menuContainer.collapsedSidebar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+}
+.menu.highlight{
+  color: #fb9678;
+}
+.menuTitle.menuOpen{
+  display: none;
+}

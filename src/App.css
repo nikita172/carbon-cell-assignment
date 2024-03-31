@@ -1,0 +1,22 @@
+.homeContainer{
+  background-color: #0a2744;
+  height: 100vh;
+}
+.currentMenu{
+  padding-top: 70px;
+  margin-left: 230px;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.currentMenu.collapsedMenu{
+  margin-left: 110px;
+}
+@media screen and (max-width:984px) {
+  .currentMenu{
+    margin-left: 110px;
+  }
+}

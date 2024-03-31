@@ -1,0 +1,98 @@
+.dashboardContainer{
+  margin-left: 220px;
+  background-color: var(--blue-bg-secondary);
+}
+.dashboardContainer.collapsedMenu{
+  margin-left: 100px;
+}
+@media screen and (max-width:984px) {
+  .dashboardContainer{
+    margin-left: 100px;
+  }
+}
+.dashboardWrapper{
+  padding: 20px;
+}
+.chartContainer{
+  background-color: var(--blue-bg-primary);
+  padding: 20px;
+}
+.chartContainerHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}      
+.chartContainerHeader h1{
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: white;
+}
+.chartItems{
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins";
+  font-weight: 300;
+  color: white;        
+}
+.chartsMainView{
+  display: flex;
+  height: 500px;
+} 
+.countryName{
+  font-family: "Poppins";
+  font-weight: 500;
+  color: white;
+  text-align: center; 
+  margin-top: 20px;
+  font-size: 18px;
+} 
+.cryptoPriceHeading{
+  color: white;
+  font-family: "Poppins";
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-bg-primary);
+  padding-left: 10px;
+}
+.topCards{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--blue-bg-secondary);
+  margin: 20px;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.topCardWrapper{
+  flex:1;
+  background-color: var(--blue-bg-primary);  
+}
+.topCard{                          
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.topCardLeft span{
+  color: var(--gray-primary);              
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+}
+.topCardRight{  
+  font-size: 25px;
+  font-family: "Poppins";
+  font-weight: 400;
+}   
+.bitcoinPrice{
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin: 0px 20px 20px 20px;
+}
+
+
